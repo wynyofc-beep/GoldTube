@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HB Play - Downloader</title>
+    <title>HB Play - Snaptube Style</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="kingtube.css">
 </head>
@@ -12,33 +12,39 @@
 <header class="yt-header">
     <div class="logo">
         <i class="fab fa-youtube" style="color: #ff0000;"></i>
-        <span>HB <b>Play</b></span>
-    </div>
-    <div class="search-container">
-        <input type="text" id="yt-input" placeholder="Pesquisar no YouTube...">
-        <button onclick="executarBusca()"><i class="fas fa-search"></i></button>
+        <span>Gold <b>Tube</b></span>
     </div>
 </header>
 
-<main id="search-results" class="video-grid" style="display:none;">
+<main class="snaptube-container">
+    <div class="hero-search" id="hero-section">
+        <h1>Gold<span>Tube</span></h1>
+        <p>Pesquise vídeos para baixar</p>
+        <div class="search-box">
+            <input type="text" id="yt-input" placeholder="Cole o link ou pesquise aqui...">
+            <button onclick="executarBusca()"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <div id="search-results" class="video-grid" style="display:none;"></div>
 </main>
 
-<section id="home-content" class="netflix-style">
-    
-    <div class="category-row">
-        <h2 class="category-title">Tendências Atuais</h2>
-        <div class="carousel-container" id="carousel-trends">
-            </div>
-    </div>
+<nav class="bottom-nav">
+    <a href="#" class="nav-item active">
+        <i class="fas fa-search"></i>
+        <span>Baixar</span>
+    </a>
+    <a href="#" class="nav-item">
+        <i class="fas fa-play-circle"></i>
+        <span>Reproduzir</span>
+    </a>
+    <a href="#" class="nav-item">
+        <i class="fas fa-cog"></i>
+        <span>Ajustes</span>
+    </a>
+</nav>
 
-    <div class="category-row">
-        <h2 class="category-title">Clipes Musicais</h2>
-        <div class="carousel-container" id="carousel-music">
-            </div>
-    </div>
-
-</section>
-
-    <script src="kingtube.js"></script>
+<script src="kingtube.js"></script>
 </body>
-</html>
+        </html>
+    
