@@ -1,0 +1,115 @@
+:root {
+    --yt-black: #0f0f0f;
+    --nt-dark: #141414;
+    --yt-red: #ff0000;
+    --hb-green: #adff2f; /* Neon do High Boss */
+    --text-main: #ffffff;
+    --text-sub: #aaaaaa;
+}
+
+body {
+    background-color: var(--nt-dark);
+    color: var(--text-main);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* --- ESTILO NETFLIX (Carroséis) --- */
+
+.netflix-style {
+    padding: 10px 0;
+}
+
+.category-row {
+    margin-bottom: 25px;
+}
+
+.category-title {
+    font-size: 18px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.carousel-container {
+    display: flex; /* Alinha horizontalmente */
+    overflow-x: auto; /* Permite scroll horizontal com o dedo */
+    scroll-behavior: smooth;
+    padding: 0 10px;
+    gap: 10px;
+    -webkit-overflow-scrolling: touch; /* Melhora scroll no mobile */
+}
+
+/* Esconde a barra de rolagem horrível */
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Card Estilo Netflix (Horizontal) */
+.nt-card {
+    flex: 0 0 160px; /* Largura fixa do card no carrossel */
+    width: 160px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.nt-card img {
+    width: 100%;
+    aspect-ratio: 16/9; /* Proporção de vídeo */
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.nt-card h3 {
+    font-size: 12px;
+    margin: 5px 0;
+    color: var(--text-main);
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Corta em 2 linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* --- DETALHE HIGH BOSS (Neon) --- */
+
+.nt-btn-dl {
+    background: transparent;
+    color: var(--hb-green);
+    border: 1px solid var(--hb-green);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.nt-btn-dl:active {
+    background: var(--hb-green);
+    color: #000;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 15px;
+}
+
+.video-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.btn-dl {
+    background: var(--hb-green);
+    color: #000;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}

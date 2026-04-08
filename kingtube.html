@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HB Play - Downloader</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="kingtube.css">
+</head>
+<body>
+
+<header class="yt-header">
+    <div class="logo">
+        <i class="fab fa-youtube" style="color: #ff0000;"></i>
+        <span>HB <b>Play</b></span>
+    </div>
+    <div class="search-container">
+        <input type="text" id="yt-input" placeholder="Pesquisar no YouTube...">
+        <button onclick="executarBusca()"><i class="fas fa-search"></i></button>
+    </div>
+</header>
+
+<main id="search-results" class="video-grid" style="display:none;">
+    </main>
+
+<section id="home-content" class="netflix-style">
+    
+    <div class="category-row">
+        <h2 class="category-title">Tendências Atuais</h2>
+        <div class="carousel-container" id="carousel-trends">
+            </div>
+    </div>
+
+    <div class="category-row">
+        <h2 class="category-title">Clipes Musicais</h2>
+        <div class="carousel-container" id="carousel-music">
+            </div>
+    </div>
+
+</section>
+
+    <main id="video-grid" class="video-grid">
+        </main>
+
+    <script src="kingtube.js"></script>
+</body>
+</html>
