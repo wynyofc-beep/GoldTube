@@ -120,4 +120,4 @@ function prepararDownload(id) {
 document.getElementById('yt-input').addEventListener('keypress', (e) => {
     if (e.key === 'Enter') executarBusca();
 });
-        
+    
