@@ -2,10 +2,10 @@
 const KEYS = [
     'AIzaSyC1iHNt2fwoDWbs0_LSoPeRc50JzIjSemk', // Sua Chave Atual
     'AIzaSyBTSd9fODd9i8Zx1Y6NVeWj4RB8sEvmWFk',           // Nova Chave
-    'SUA_CHAVE_DO_PROJETO_3_AQUI'            // Outra Chave
-    'API_KEY_4',
-    'API_KEY_5',
-    'API_KEY_6',
+    'AIzaSyDnT97Gp1idegtlilmIa3gvXX4ph3hLg7w',           // Outra Chave
+    'AIzaSyC7A9c9xlAXzdkPz1cB8RQ-e-abmgdjLiA',
+    'AIzaSyD8ohtxU99k7nFlpwlS274uTOgkSy-MgvU',
+    'AIzaSyCT13LHYUQ-0lEHyRa1iUV-qpfvqIdLwuw',
     'API_KEY_7',
     'API_KEY_8',
     'API_KEY_9',
