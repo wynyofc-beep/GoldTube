@@ -3,6 +3,15 @@ const KEYS = [
     'AIzaSyC1iHNt2fwoDWbs0_LSoPeRc50JzIjSemk', // Sua Chave Atual
     'AIzaSyBTSd9fODd9i8Zx1Y6NVeWj4RB8sEvmWFk',           // Nova Chave
     'SUA_CHAVE_DO_PROJETO_3_AQUI'            // Outra Chave
+    'API_KEY_4',
+    'API_KEY_5',
+    'API_KEY_6',
+    'API_KEY_7',
+    'API_KEY_8',
+    'API_KEY_9',
+    'API_KEY_10',
+    'API_KEY_11',
+    'API_KEY_12'
 ];
 
 let currentKeyIndex = 0;
